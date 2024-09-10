@@ -93,7 +93,7 @@ function Lights() {
 
 function Model({ isDancing, onClick }) {
   const group = useRef();
-  const { scene, materials, animations } = useGLTF('/LOwpolyGAMETAP.glb');
+  const { scene, materials, animations } = useGLTF(`${process.env.PUBLIC_URL}/LOwpolyGAMETAP.glb`);
   const { actions, mixer } = useAnimations(animations, group);
   const [currentAction, setCurrentAction] = useState(null);
   const { camera } = useThree();
@@ -240,4 +240,4 @@ function DanceButton({ onTap }) {
 
 export default DanceButton;
 
-useGLTF.preload('/LOwpolyGAMETAP.glb');
+useGLTF.preload(`${process.env.PUBLIC_URL}/LOwpolyGAMETAP.glb`);
