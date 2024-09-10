@@ -7,25 +7,23 @@ import BottomNav from './components/BottomNav';
 function App() {
   const [points, setPoints] = useState(7230000000);
   const [energy, setEnergy] = useState(16);
-  const [activeMenu, setActiveMenu] = useState(null);
 
   const handleTap = () => {
     setPoints(prev => prev + 12);
     setEnergy(prev => Math.max(0, prev - 1));
   };
 
-  const toggleMenu = (menu) => {
-    setActiveMenu(activeMenu === menu ? null : menu);
-  };
-
   return (
-    <div className="bg-gradient-to-b from-gray-900 to-purple-600 min-h-screen flex flex-col text-white font-sans">
-      <Header points={points} />
-      <main className="flex-grow flex flex-col items-center justify-center p-4">
-        <DanceButton onTap={handleTap} />
-        <EnergyBar energy={energy} />
-      </main>
-      <BottomNav activeMenu={activeMenu} toggleMenu={toggleMenu} />
+    <div className="h-screen flex flex-col text-white font-sans relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-radial from-yellow-400 via-gray-800 to-gray-900 z-0"></div>
+      <div className="relative z-10 flex flex-col h-full">
+        <Header points={points} />
+        <main className="flex-grow flex flex-col items-center justify-between py-4 px-2">
+          <EnergyBar energy={energy} />
+          <DanceButton onTap={handleTap} />
+        </main>
+        <BottomNav />
+      </div>
     </div>
   );
 }

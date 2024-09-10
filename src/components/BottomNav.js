@@ -9,20 +9,23 @@ const navItems = [
   { name: 'Stats', icon: '📊' },
 ];
 
-function BottomNav({ activeMenu, toggleMenu }) {
+function BottomNav() {
   return (
-    <nav className="flex justify-around p-4 bg-purple-800">
+    <nav className="flex justify-around py-2 px-1 bg-gray-800 bg-opacity-50">
       {navItems.map((item) => (
         <motion.button
           key={item.name}
-          onClick={() => toggleMenu(item.name)}
-          className={`flex flex-col items-center ${
-            item.name === 'Tap' ? 'bg-yellow-400 rounded-xl p-2' : ''
+          className={`flex flex-col items-center justify-center w-14 h-14 rounded-lg ${
+            item.name === 'Tap'
+              ? 'bg-yellow-500 text-gray-900 shadow-lg transform -translate-y-2'
+              : 'bg-gray-700 text-gray-300'
           }`}
+          whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          transition={{ type: 'spring', stiffness: 300, damping: 15 }}
         >
-          <span className="text-2xl mb-1">{item.icon}</span>
-          <span className="text-xs">{item.name}</span>
+          <span className="text-xl mb-1">{item.icon}</span>
+          <span className="text-xs font-medium">{item.name}</span>
         </motion.button>
       ))}
     </nav>
