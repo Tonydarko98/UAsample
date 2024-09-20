@@ -1773,6 +1773,17 @@
     suspend-react "^0.1.3"
     zustand "^3.7.1"
 
+"@react-three/postprocessing@^2.16.2":
+  version "2.16.2"
+  resolved "https://registry.npmjs.org/@react-three/postprocessing/-/postprocessing-2.16.2.tgz"
+  integrity sha512-2ya1gXLDpzyfbELobi3rPHNNZZCrCfyq20GMYJD1yD7ZyBFSpRG9YSPMBnOal6A89kXanPBw273h6/Dqev0n7g==
+  dependencies:
+    buffer "^6.0.3"
+    maath "^0.6.0"
+    n8ao "^1.6.6"
+    postprocessing "^6.32.1"
+    three-stdlib "^2.23.4"
+
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
   resolved "https://registry.npmjs.org/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz"
@@ -2342,7 +2353,7 @@
   dependencies:
     "@types/jest" "*"
 
-"@types/three@^0.163.0", "@types/three@>=0.134.0":
+"@types/three@^0.163.0", "@types/three@>=0.134.0", "@types/three@>=0.144.0":
   version "0.163.0"
   resolved "https://registry.npmjs.org/@types/three/-/three-0.163.0.tgz"
   integrity sha512-uIdDhsXRpQiBUkflBS/i1l3JX14fW6Ot9csed60nfbZNXHDTRsnV2xnTVwXcgbvTiboAR4IW+t+lTL5f1rqIqA==
@@ -6916,6 +6927,11 @@ maath@^0.10.7:
   resolved "https://registry.npmjs.org/maath/-/maath-0.10.8.tgz"
   integrity sha512-tRvbDF0Pgqz+9XUa4jjfgAQ8/aPKmQdWXilFu2tMy4GWj4NOsx99HlULO4IeREfbO3a0sA145DZYyvXPkybm0g==
 
+maath@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.npmjs.org/maath/-/maath-0.6.0.tgz"
+  integrity sha512-dSb2xQuP7vDnaYqfoKzlApeRcR2xtN8/f7WV/TMAkBC8552TwTLtOO0JTcSygkYMjNDPoo6V01jTw/aPi4JrMw==
+
 magic-string@^0.25.0, magic-string@^0.25.7:
   version "0.25.9"
   resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.25.9.tgz"
@@ -7113,6 +7129,11 @@ mz@^2.7.0:
     any-promise "^1.0.0"
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
+
+n8ao@^1.6.6:
+  version "1.9.2"
+  resolved "https://registry.npmjs.org/n8ao/-/n8ao-1.9.2.tgz"
+  integrity sha512-Y4FZmgsqoZbFWGxSLxymiFSYpt/CNxU5p65+SevEIPzfs2uv6oiZHOuaBLv6+CF+0s1nSBFIOs+BrOxF8aOnmw==
 
 nanoid@^3.3.7:
   version "3.3.7"
@@ -8106,6 +8127,11 @@ postcss@^7.0.35:
   dependencies:
     picocolors "^0.2.1"
     source-map "^0.6.1"
+
+postprocessing@^6.32.1, postprocessing@^6.36.2, postprocessing@>=6.30.0:
+  version "6.36.2"
+  resolved "https://registry.npmjs.org/postprocessing/-/postprocessing-6.36.2.tgz"
+  integrity sha512-a1qZjpm0Vrozat7YFtYOEvwElWz/ukhxoA+K7HzDVeor20vzacREMnJZL5GTj6TFVr7/ma3W0qD03Go0V5gQOA==
 
 potpack@^1.0.1:
   version "1.0.2"
@@ -9567,7 +9593,7 @@ three-mesh-bvh@^0.7.0:
   resolved "https://registry.npmjs.org/three-mesh-bvh/-/three-mesh-bvh-0.7.7.tgz"
   integrity sha512-EQbW4xyHbVVXaER8bJWzfZkq/xjYYmPGiJy5isQRbB1KJ8d4IwPIsaGyL+0UKTrSm+FY0p0e2DFeNHl03lZIyg==
 
-three-stdlib@^2.29.9:
+three-stdlib@^2.23.4, three-stdlib@^2.29.9:
   version "2.32.2"
   resolved "https://registry.npmjs.org/three-stdlib/-/three-stdlib-2.32.2.tgz"
   integrity sha512-ZN25Na/Xg7APhGKwJ1zhGdhZDsDGGnnm1k5Z+9LLlnfsFye4jigvbN3eA/Ta8hQmBNmEHXoozpmpKK1x8dCePQ==
@@ -9579,7 +9605,7 @@ three-stdlib@^2.29.9:
     fflate "^0.6.9"
     potpack "^1.0.1"
 
-three@^0.168.0, "three@>= 0.151.0", "three@>= 0.159.0", three@>=0.125.0, three@>=0.126, three@>=0.126.1, three@>=0.128.0, three@>=0.133, three@>=0.134.0, three@>=0.137:
+three@^0.168.0, "three@>= 0.138.0", "three@>= 0.151.0", "three@>= 0.157.0 < 0.169.0", "three@>= 0.159.0", three@>=0.125.0, three@>=0.126, three@>=0.126.1, three@>=0.128.0, three@>=0.133, three@>=0.134.0, three@>=0.137, three@>=0.144.0:
   version "0.168.0"
   resolved "https://registry.npmjs.org/three/-/three-0.168.0.tgz"
   integrity sha512-6m6jXtDwMJEK/GGMbAOTSAmxNdzKvvBzgd7q8bE/7Tr6m7PaBh5kKLrN7faWtlglXbzj7sVba48Idwx+NRsZXw==

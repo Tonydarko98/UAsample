@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="h-screen flex flex-col text-white font-sans relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-radial from-yellow-400 via-gray-800 to-gray-900 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-radial from-blue-100 via-blue-500 to-gray-900 z-0"></div>
       <div className="relative z-10 flex flex-col h-full">
         <Header points={points} />
         <main className="flex-grow flex flex-col items-center justify-between py-4 px-2">
