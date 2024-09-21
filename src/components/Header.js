@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 function Header({ points }) {
   return (
     <header className="py-2 px-4 flex justify-between items-center bg-gray-800 bg-opacity-50">
-      <span className="text-lg font-bold text-purple-300">TapDance</span>
+      <span className="text-lg font-bold text-purple-300">Union Avatars Dance</span>
       <motion.div
         className="flex items-center bg-gray-700 rounded-full px-3 py-1"
         initial={{ opacity: 0, y: -20 }}

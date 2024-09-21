@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://tonydarko98.github.io/UAsample",
   "dependencies": {
-    "@react-three/drei": "^9.112.0",
+    "@react-three/drei": "^9.112.1",
     "@react-three/fiber": "^8.17.7",
     "@react-three/postprocessing": "^2.16.2",
     "@testing-library/jest-dom": "^5.14.1",

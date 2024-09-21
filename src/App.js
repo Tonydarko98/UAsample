@@ -19,7 +19,6 @@ function App() {
       <div className="relative z-10 flex flex-col h-full">
         <Header points={points} />
         <main className="flex-grow flex flex-col items-center justify-between py-4 px-2">
-          <EnergyBar energy={energy} />
           <DanceButton onTap={handleTap} />
         </main>
         <BottomNav />
